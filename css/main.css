@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap");
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  opacity: 0;
+}
+
+p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #ee118f17;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  position: relative;
+  max-width: 500px;
+  padding: 4rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 1rem #ee118e69;
+          box-shadow: 0 0.5rem 1rem #ee118e69;
+}
+
+.form_container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.form_container input {
+  border: none;
+  padding: 1rem;
+  border: 2px solid #ee118f;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form_container button {
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #ee118f;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  width: auto;
+}
+
+.onstart {
+  position: absolute;
+  top: -80px;
+}
+/*# sourceMappingURL=main.css.map */

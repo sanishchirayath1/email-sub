@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h2>Success!</h2>
+
+    <div class="success">
+      <lottie-player
+        class="lottie"
+        src="https://assets6.lottiefiles.com/packages/lf20_fbwbq3um.json"
+        background="transparent"
+        speed="1"
+        style="width: 150px; height: 150px"
+        loop
+      ></lottie-player>
+    </div>
+    <div class="form_container">
+      <h1 class="seq">Wish to subscribe ?</h1>
+
+      <div class="form">
+        <label for="email" class="seq"> Email address</label>
+        <input type="email" name="email" id="email" class="seq" />
+        <p class="seq">Don't worry we won't spam your inbox...!</p>
+        <button class="cta seq">Subscribe</button>
+      </div>
+
+      <div class="onstart">
+        <lottie-player
+          src="https://assets4.lottiefiles.com/private_files/lf30_ssbiwdab.json"
+          background="transparent"
+          speed="1"
+          style="width: 150px; height: 150px"
+          autoplay
+          loop
+        ></lottie-player>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      let t1 = gsap.timeline({
+        defaults: { ease: "Circ.easeOut" },
+      });
+      let cta = document.querySelector(".cta");
+      const player = document.querySelector(".lottie");
+      let container = document.querySelector(".form_container");
+      t1.paused(true);
+      t1.to(".seq", { y: 40, opacity: 0, stagger: 0.05 });
+      t1.to(".form_container", { opacity: 0 }, "-=0.5");
+      t1.to("h2", { y: 20, opacity: 1 }, "+=1");
+      cta.addEventListener("click", () => {
+        t1.play();
+        setTimeout(() => {
+          container.style.display = "none";
+          player.play();
+        }, 800);
+      });
+    </script>
+  </body>
+</html>
