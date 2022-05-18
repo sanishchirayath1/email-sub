@@ -54,7 +54,10 @@
       });
       let cta = document.querySelector(".cta");
       const player = document.querySelector(".lottie");
-      let container = document.querySelector(".form_container");
+      const container = document.querySelector(".form_container");
+      const success = document.querySelector(".success");
+      const h2 = document.querySelector("h2");
+
       t1.paused(true);
       t1.to(".seq", { y: 40, opacity: 0, stagger: 0.05 });
       t1.to(".form_container", { opacity: 0 }, "-=0.5");
@@ -62,6 +65,8 @@
       cta.addEventListener("click", () => {
         t1.play();
         setTimeout(() => {
+          success.style.display = "block";
+          h2.style.display = "block";
           container.style.display = "none";
           player.play();
         }, 800);

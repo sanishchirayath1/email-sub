@@ -38,6 +38,11 @@ h1 {
 
 h2 {
   opacity: 0;
+  display: none;
+}
+
+.success {
+  display: none;
 }
 
 p {
